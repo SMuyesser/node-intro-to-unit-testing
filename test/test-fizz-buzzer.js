@@ -11,33 +11,33 @@ describe('fizzBuzzer', function() {
 			const expected = 'fizz-buzz';
 			normalCases.forEach(function(input) {
 				const num = fizzBuzzer(input);
-				num.should.return(expected);
+				num.should.equal(expected);
 			});
 		});
 
-		it('should return buzz', function() {
+		it('should equal buzz', function() {
 			const normalCases = [5, 10, 20];
 			const expected = 'buzz';
 			normalCases.forEach(function(input) {
 				const num = fizzBuzzer(input);
-				num.should.return(expected);
+				num.should.equal(expected);
 			});
 		});
 
-		it('should return fizz', function() {
+		it('should equal fizz', function() {
 			const normalCases = [3, 6, 9];
 			const expected = 'fizz';
 			normalCases.forEach(function(input) {
 				const num = fizzBuzzer(input);
-				num.should.return(expected);
+				num.should.equal(expected);
 			});
 		});
 
-		it('should return num', function() {
+		it('should equal num', function() {
 			const normalCases = [1, 2, 14];
 			normalCases.forEach(function(input) {
 				const num = fizzBuzzer(input);
-				num.should.return(num);
+				num.should.equal(num);
 			});
 		});
 
